@@ -11,49 +11,85 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
 	<link href="css/mdb.min.css" rel="stylesheet">
+	<!-- JQuery CSS Datatables -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 	<!-- custom styles -->
 	<link href="css/style.css" rel="stylesheet">
 
 </head>
 <body>
-	<h1>Mini-projet Programmation web client riche</h1>
+	<header class="mb-4">
+	  <nav class="navbar navbar-expand-lg navbar-dark blue-gradient">
+	    <a class="navbar-brand ml-5" href=""><strong>Vous cherchez une photo ?</strong></a>
+	  </nav>
+	</header>
 
-<form>
-  <div class="row">
-    <div class="col col-md-6">
-		<div class="md-form">
-			<input type="text" id="commune" class="form-control" name="commune">
-			<label>Insérer commune</label>
-		</div>
-    </div>
-    <div class="col col-md-5">
-		<div class="md-form">
-			<input type="text" id="maxPhoto" class="form-control" name="commune" value="10">
-			<label>Nombres de photos</label>
-		</div>
-    </div>
-    <div class="col col-md-1 mt-3">
-    	<a class="btn-floating btn-lg purple-gradient" id="submit">
-    		<i class="fas fa-arrow-right fa-lg"></i>
-		</a>
-    </div>
-  </div>
-</form>
+	<form>
+	  <div class="row">
+	    <div class="col col-md-5">
+			<div class="md-form">
+				<input type="text" id="commune" class="form-control" name="commune">
+				<label>Insérer commune</label>
+			</div>
+	    </div>
+	    <div class="col col-md-3">
+			<div class="md-form">
+				<input type="text" id="maxPhoto" class="form-control" name="commune" value="10">
+				<label>Nombres de photos</label>
+			</div>
+	    </div>
+	    <div class="col col-md-3">
+			<div class="md-form">
+				<input type="text" id="datepicker" class="form-control" name="date">
+				<label>Choix date</label>
+			</div>
+	    </div>
+	    <div class="col col-md-1 mt-1">
+			<button type="button" class="btn btn-floating waves-effect waves-light indigo px-3 " id="submit">
+				<i class="fas fa-arrow-right fa-lg" aria-hidden="true"></i>
+			</button>
+	    </div>
+	  </div>
+	</form>
 
-<!-- Vue Photo -->
-
-<div class="container">
-	<div class="row">
-		<div id="images"></div>
+	<!-- Tabs -->	
+	<ul class="nav nav-tabs nav-justify md-tabs indigo mt-2" id="myTab" role="tablist">
+	  <li class="nav-item waves-effect waves-light">
+	    <a class="nav-link active" id="photo-tab" data-toggle="tab" href="#photo" role="tab" aria-controls="photo"
+	      aria-selected="true">Vue photo</a>
+	  </li>	
+	  <li class="nav-item waves-effect waves-light">
+	    <a class="nav-link" id="table-tab" data-toggle="tab" href="#table" role="tab" aria-controls="table"
+	      aria-selected="false">Vue table</a>
+	  </li>
+	</ul>
+	<div class="tab-content pt-5" id="myTabContent">
+	  <div class="tab-pane fade show active" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+	  	<!-- Vue Photo -->
+	  	<div class="container">
+	  		<div class="row" id="images"></div>
+	  	</div>
+	  	<div id="dialogNoPhoto" title="Alert">
+	  		<p>Aucune photo disponible</p>
+	  	</div>
+	  </div>
+	  <div class="tab-pane fade" id="table" role="tabpanel" aria-labelledby="table-tab">
+	  	<!-- Vue Table -->
+	  	<div class="container">
+			<table id="myTable" class="display" style="width: 100%">
+				<thead>
+					<tr>
+						<th>Photo</th>
+						<th>Titre</th>
+						<th>Date</th>
+						<th>Auteur id</th>
+					</tr>
+				</thead>
+			</table>
+	    </div>
+	  </div>
 	</div>
-</div>
 
-<div modal></div>
-<!-- Vue Table -->
-
-
-	
-	
 	<!-- SCRIPTS -->
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -65,6 +101,8 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="js/mdb.js"></script>
+	<!-- JQuery UI Datatables -->
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 	<!-- custom script -->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
