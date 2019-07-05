@@ -1,7 +1,7 @@
 # API Flickr
 
 Projet IUT Informatique.  
-Réalisation d'une page html qui permettra à un utilisateur de rechercher des photos relatives à des villes françaises sur le site [Flick] (https://www.flickr.com/).   
+Réalisation d'une page html qui permettra à un utilisateur de rechercher des photos relatives à des villes françaises sur le site [Flickr](https://www.flickr.com/).   
 
 ## Installation :
 
