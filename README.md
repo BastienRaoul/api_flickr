@@ -9,5 +9,5 @@ Réalisation d'une page html qui permettra à un utilisateur de rechercher des p
 
 ## Getting started :
 
-1. Go to : cd ressource/
-2. Open in local : index.html
+1. Go to : `cd ressource/`
+2. Open in local : `index.html`
