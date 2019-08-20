@@ -1,13 +1,32 @@
 # API Flickr
 
 Projet IUT Informatique.  
-Réalisation d'une page html qui permettra à un utilisateur de rechercher des photos relatives à des villes françaises sur le site [Flickr](https://www.flickr.com/).   
+Réalisation d'une page html qui permettra à un utilisateur de rechercher des photos relatives à des villes françaises sur le site [Flickr](https://www.flickr.com/).
 
-## Installation :
+## Getting Started
 
-1. Clone this repository : `git clone https://github.com/BastienRaoul/api_flickr.git`  
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Getting started :
+### Installing
 
-1. Go to : `cd ressource/`
-2. Open in local : `index.html`
+1. Clone the repo
+
+```
+git clone https://github.com/BastienRaoul/api_flickr.git
+```
+
+2. Open Project Folder
+
+3. Open index.html in your favorite browser
+
+4. Explore
+
+```
+Enjoy :)
+```
+
+## Built With
+
+* HTML5
+* CSS3
+* JavaScript
